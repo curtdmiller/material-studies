@@ -2,14 +2,14 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
-    keywords: 'gatsbyjs, gatsby, javascript, sample, something',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    title: 'Curt Dallace Miller',
+    description: 'a tableau',
+    keywords: 'music, art, sound art, transcription, web art, code',
+    siteUrl: 'https://www.curtdmiller.com',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'Curt Miller',
+      url: 'curtdmiller.github.io',
+      email: 'curtdmiller@gmail.com'
     }
   },
   plugins: [

@@ -74,10 +74,10 @@ export default `
     tr {
       &:nth-of-type(odd) {
         td {
-          background-color: ${colors.ui.whisper};
+          background-color: ${colors.ui.light};
         }
         tr {
-          background-color: ${colors.ui.whisper};
+          background-color: ${colors.ui.light};
         }
       }
     }

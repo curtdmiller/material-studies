@@ -10147,6 +10147,13 @@ react-hot-loader@^4.8.4:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
+react-icons@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.10.0.tgz#6c217a2dde2e8fa8d293210023914b123f317297"
+  integrity sha512-WsQ5n1JToG9VixWilSo1bHv842Cj5aZqTGiS3Ud47myF6aK7S/IUY2+dHcBdmkQcCFRuHsJ9OMUI0kTDfjyZXQ==
+  dependencies:
+    camelcase "^5.0.0"
+
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
@@ -12036,6 +12043,26 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-crimson-text@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-crimson-text/-/typeface-crimson-text-0.0.72.tgz#af492f355f1474ec185bebebf4b2aaaae6eec24d"
+  integrity sha512-CLDNCOJ05k1BIbgQ1eAPPaK4eVHls8Y+n5NTIwvlFmhCSLzCXWII4vQ2oV6Iyi3BOVogj/LsWq25IdQINrh5+Q==
+
+typeface-fira-sans@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-fira-sans/-/typeface-fira-sans-0.0.75.tgz#6caaa7c7298f34838476af3c37dc57d2f1621132"
+  integrity sha512-PeaE4JCzBxbrp3oJzLjz+EVMjMIvrqnpmC7cp+HKYgPFbd9j4TAjGWRCEeaY/j9PRbTMICbrTuvanQFCmcjrYQ==
+
+typeface-libre-franklin@^0.0.75:
+  version "0.0.75"
+  resolved "https://registry.yarnpkg.com/typeface-libre-franklin/-/typeface-libre-franklin-0.0.75.tgz#7b8a1cfaf3da9324b4f7cf5c58220fa440a7a998"
+  integrity sha512-bpX2YsybHkft0ewKAukZWgjOr3r7vQ9NG0jwGj9HGv1A3/wcuoafkv7pK5cGouAjLNqVuKIkdelgefdDhGg/fw==
+
+typeface-rosario@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/typeface-rosario/-/typeface-rosario-1.1.4.tgz#e901bafd401f8d1634e38ba7f9f03277061f73ed"
+  integrity sha512-K6Q25ymugEhL/HtgwDjNeejIArDVxTAAJLax8Y9E5roHbmkJ+eFDZsTJhbsAiljP8Gknb2GULFTq6KuFHCKzaQ==
 
 typescript@^3.5.2:
   version "3.5.2"

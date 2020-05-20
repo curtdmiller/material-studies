@@ -5,3 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+
+// Load Libre Franklin typeface
+require('typeface-libre-franklin')
+// Load Fira Sans typeface
+require('typeface-fira-sans')

@@ -10,7 +10,6 @@ const PageTwo = () => (
     <Page>
       <Container>
         <h1>Hi from the second page</h1>
-        <p>Welcome to page 2</p>
         <ul>
           <li>
             <Link to="/a-markdown-page/">Show me some Markdown!</Link>

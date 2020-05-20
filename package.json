@@ -52,6 +52,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.10.0",
+    "typeface-crimson-text": "^0.0.72",
+    "typeface-fira-sans": "^0.0.75",
+    "typeface-libre-franklin": "^0.0.75",
+    "typeface-rosario": "^1.1.4",
     "typescript": "^3.5.2"
   },
   "devDependencies": {
