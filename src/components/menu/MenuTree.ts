@@ -11,6 +11,12 @@ export const menuTree: TreeItem[] = [
         url: '/lewitt-studies/open-cubes',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Wall Drawing 391',
+        url: '/lewitt-studies/wall-drawing-391',
+        hasChildren: false,
+        children: []
       }
     ]
   },
