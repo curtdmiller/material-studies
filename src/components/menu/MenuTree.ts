@@ -17,6 +17,18 @@ export const menuTree: TreeItem[] = [
         url: '/lewitt-studies/wall-drawing-391',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Wall Drawing 335',
+        url: '/lewitt-studies/wall-drawing-335',
+        hasChildren: false,
+        children: []
+      },
+      {
+        title: 'Wall Drawing 462',
+        url: '/lewitt-studies/wall-drawing-462',
+        hasChildren: false,
+        children: []
       }
     ]
   },
