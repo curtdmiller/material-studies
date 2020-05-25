@@ -8,7 +8,11 @@ import Container from './Container'
 
 const StyledHeader = styled.header`
   height: ${heights.header}px;
-  padding: 0 ${dimensions.containerPadding}rem;
+  padding: 0
+    ${(props: { headerWidth: 'wide' | 'narrow' | undefined }) =>
+      props.headerWidth === 'wide'
+        ? '5%'
+        : dimensions.containerPadding + 'rem'};
   color: ${transparentize(0.5, colors.white)};
 `
 
@@ -17,6 +21,8 @@ const HeaderInner = styled(Container)`
   flex-direction: row;
   align-items: center;
   height: 100%;
+  margin-left: ${(props: { headerWidth: 'wide' | 'narrow' | undefined }) =>
+    props.headerWidth === 'wide' && '0'};
 `
 
 const HomepageLink = styled(Link)`
@@ -32,11 +38,12 @@ const HomepageLink = styled(Link)`
 
 interface HeaderProps {
   title: string
+  headerWidth: 'wide' | 'narrow' | undefined
 }
 
-const Header: React.FC<HeaderProps> = ({ title }) => (
-  <StyledHeader>
-    <HeaderInner>
+const Header: React.FC<HeaderProps> = ({ title, headerWidth }) => (
+  <StyledHeader headerWidth={headerWidth}>
+    <HeaderInner headerWidth={headerWidth}>
       <HomepageLink to="/">{title}</HomepageLink>
     </HeaderInner>
   </StyledHeader>
