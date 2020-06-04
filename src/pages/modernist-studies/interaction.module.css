@@ -1,0 +1,119 @@
+/*
+ *
+ * Josef Albers - Interaction
+ *
+ */
+
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('data:application/font-woff;charset=utf-8;base64,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')
+    format('woff2');
+}
+
+.albersInteraction {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+.inner {
+  width: 87%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 0;
+  padding: 5% 0;
+}
+svg .title {
+  width: 100%;
+  height: auto;
+}
+svg text {
+  font-family: 'EB Garamond', serif;
+}
+.subtitle {
+  margin-top: -0.7em;
+  padding-left: 12%;
+  font-size: 4vw;
+  font-style: italic;
+  font-family: 'EB Garamond', serif;
+}
+header p {
+  margin: 0;
+}
+.footer {
+  position: relative;
+  margin: 0;
+  padding: 4% 0 7%;
+  line-height: 0.75vw;
+}
+.footer p {
+  font-size: 1vw;
+  position: relative;
+  left: 77%;
+  display: inline-block;
+}
+.square {
+  margin: 0 auto;
+  transition: all 500ms;
+}
+.squareOuter {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-color: #5bb8ad;
+}
+.squareCenter {
+  position: absolute;
+  top: 14.65%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80.66%;
+  height: 0;
+  padding-bottom: 80.66%;
+  background-color: #317584;
+}
+.squareInner {
+  position: absolute;
+  top: 18.81%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 74.74%;
+  height: 0;
+  padding-bottom: 74.74%;
+  background-color: #225ba4;
+}
+/* &:hover, */
+.inner.touched .squareCenter,
+.inner.touched .squareInner {
+  top: 10%;
+  transform: scale(0.8) translateX(-62%) rotate(22.5deg);
+}
+@media screen and (any-hover: hover) {
+  .albersInteraction:hover .squareCenter,
+  .albersInteraction:hover .squareInner {
+    top: 10%;
+    transform: scale(0.8) translateX(-62%) rotate(22.5deg);
+  }
+}
+@media screen and (min-width: 770px) {
+  .header .subtitle {
+    font-size: 3vw;
+  }
+  .footer p {
+    font-size: 0.75vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header .subtitle {
+    font-size: 2vw;
+  }
+  .footer p {
+    font-size: 0.5vw;
+  }
+}

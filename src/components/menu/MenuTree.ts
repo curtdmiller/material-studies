@@ -45,9 +45,16 @@ export const menuTree: TreeItem[] = [
     ]
   },
   {
-    title: 'Modernist Studies',
+    title: 'Modernist Print Material Studies',
     url: '/modernist-studies',
     hasChildren: true,
-    children: []
+    children: [
+      {
+        title: 'Albers, Interaction',
+        url: '/modernist-studies/albers-interaction',
+        hasChildren: false,
+        children: []
+      }
+    ]
   }
 ]
