@@ -1,0 +1,145 @@
+/*
+ *
+ * Josef Albers - Interaction of Color, 50th Anniversary ed.
+ *
+ */
+
+.albersColor {
+  border: 1px solid #aaa;
+}
+.albersColor.touched .box:nth-of-type(1),
+.albersColor.touched .box:nth-of-type(2),
+.albersColor.touched .box:nth-of-type(3),
+.albersColor.touched .box:nth-of-type(4),
+.albersColor.touched .box:nth-of-type(5),
+.albersColor.touched .box:nth-of-type(6),
+.albersColor.touched .box:nth-of-type(7),
+.albersColor.touched .box:nth-of-type(8) {
+  transform: rotate(0);
+  left: 0;
+  top: 0;
+}
+
+.header {
+  width: 78%;
+  margin: 7% auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+.header p {
+  margin: 0;
+}
+.author {
+  font-family: 'Sintony', sans-serif;
+  font-weight: 600;
+  font-size: 3vw;
+  position: relative;
+  top: 6%;
+}
+.title {
+  font-family: Palatino, serif;
+  font-size: 4.3vw;
+  font-weight: 100;
+}
+.subtitle {
+  font-family: Palatino, serif;
+  font-size: 2.55vw;
+  font-style: italic;
+  padding-top: 2px;
+}
+.boxes {
+  position: relative;
+  width: 60%;
+  margin: 12% auto;
+}
+.box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 26%;
+  transition: all 500ms;
+}
+.box:nth-of-type(1) {
+  background-color: #ff5b48;
+  z-index: 0;
+  transform: rotate(-5deg) translateX(-5%);
+}
+.box:nth-of-type(2) {
+  background-color: #f62a10;
+  z-index: 1;
+  transform: rotate(4deg) translateX(2%) translateY(-12%);
+  top: -5px;
+}
+.box:nth-of-type(3) {
+  background-color: #ec3337;
+  z-index: 0;
+  transform: rotate(-2deg) translateX(7%) translateY(10%);
+}
+.box:nth-of-type(4) {
+  background-color: #ac0207;
+  z-index: 1;
+  transform: rotate(-3deg) translateX(-20%) translateY(-40%);
+}
+.box:nth-of-type(5) {
+  background-color: #ff5e65;
+  z-index: 2;
+  transform: rotate(12deg) translateX(20%) translateY(-55%);
+}
+.box:nth-of-type(6) {
+  background-color: #a02a3b;
+  z-index: 3;
+  transform: rotate(-1deg) translateX(27%) translateY(-67%);
+}
+.box:nth-of-type(7) {
+  background-color: #ff2b0e;
+  z-index: 4;
+  transform: rotate(0.5deg) translateX(13%) translateY(-95%);
+}
+.box:nth-of-type(8) {
+  background-color: #9f0022;
+  z-index: 3;
+  transform: rotate(4.5deg) translateX(2%) translateY(-115%);
+}
+
+@media screen and (any-hover: hover) {
+  .albersColor:hover .box:nth-of-type(1),
+  .albersColor:hover .box:nth-of-type(2),
+  .albersColor:hover .box:nth-of-type(3),
+  .albersColor:hover .box:nth-of-type(4),
+  .albersColor:hover .box:nth-of-type(5),
+  .albersColor:hover .box:nth-of-type(6),
+  .albersColor:hover .box:nth-of-type(7),
+  .albersColor:hover .box:nth-of-type(8) {
+    transform: rotate(0);
+    left: 0;
+    top: 0;
+  }
+}
+@media screen and (min-width: 770px) {
+  .author {
+    font-size: 2.25vw;
+    top: 6%;
+  }
+  .title {
+    font-size: 3.2vw;
+  }
+  .subtitle {
+    font-size: 1.9vw;
+    padding-top: 2px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .author {
+    font-size: 1.5vw;
+    top: 6%;
+  }
+  .title {
+    font-size: 2.1vw;
+  }
+  .subtitle {
+    font-size: 1.25vw;
+    padding-top: 2px;
+  }
+}

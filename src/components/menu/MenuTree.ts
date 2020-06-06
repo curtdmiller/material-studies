@@ -54,6 +54,12 @@ export const menuTree: TreeItem[] = [
         url: '/modernist-studies/albers-interaction',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Albers, Interaction of Color, 50th Anniv. Ed.',
+        url: '/modernist-studies/albers-color',
+        hasChildren: false,
+        children: []
       }
     ]
   }
