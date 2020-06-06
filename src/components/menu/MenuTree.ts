@@ -60,6 +60,12 @@ export const menuTree: TreeItem[] = [
         url: '/modernist-studies/albers-color',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Provocative Percussion',
+        url: '/modernist-studies/provocative-percussion',
+        hasChildren: false,
+        children: []
       }
     ]
   }
