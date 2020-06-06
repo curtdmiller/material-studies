@@ -66,6 +66,12 @@ export const menuTree: TreeItem[] = [
         url: '/modernist-studies/provocative-percussion',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Provocative Percussion Vol. III',
+        url: '/modernist-studies/provocative-percussion-vol-3',
+        hasChildren: false,
+        children: []
       }
     ]
   }
