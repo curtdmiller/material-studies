@@ -78,6 +78,12 @@ export const menuTree: TreeItem[] = [
         url: '/modernist-studies/albers-pillars',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Alvin Lustig, Record Cover, The Hewitt Orchestra',
+        url: '/modernist-studies/lustig-hewitt',
+        hasChildren: false,
+        children: []
       }
     ]
   }
