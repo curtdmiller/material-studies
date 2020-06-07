@@ -4,6 +4,7 @@ import commonStyles from './common-styles.module.css'
 import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import { Helmet } from 'react-helmet'
 
 export const query = graphql`
   query {
@@ -23,6 +24,16 @@ const AlbersInteraction = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
+      <Helmet>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sintony:700&display=swap"
+        />
+      </Helmet>
       <div className={commonStyles.wrapper}>
         <div className={styles.albersColor}>
           <div className={styles.header}>

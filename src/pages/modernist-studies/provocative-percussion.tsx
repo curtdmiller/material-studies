@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import clsx from 'clsx'
+import { Helmet } from 'react-helmet'
 
 export const query = graphql`
   query {
@@ -24,6 +25,9 @@ const ProvocativePercussion = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/moe5wud.css" />
+      </Helmet>
       <div className={commonStyles.wrapper}>
         <div className={styles.percussion}>
           <div className={styles.header}>

@@ -4,6 +4,7 @@ import commonStyles from './common-styles.module.css'
 import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import { Helmet } from 'react-helmet'
 
 export const query = graphql`
   query {
@@ -23,6 +24,9 @@ const ProvocativePercussionVol3 = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
+      <Helmet>
+        <link rel="stylesheet" href="https://use.typekit.net/moe5wud.css" />
+      </Helmet>
       <div className={commonStyles.wrapper}>
         <div className={styles.percussionVol3}>
           <div className={styles.header}>
