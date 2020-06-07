@@ -18,7 +18,7 @@ export const query = graphql`
   }
 `
 
-const ProvocativePercussion = () => {
+const LustigHewitt = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
@@ -85,4 +85,4 @@ const ProvocativePercussion = () => {
   )
 }
 
-export default ProvocativePercussion
+export default LustigHewitt

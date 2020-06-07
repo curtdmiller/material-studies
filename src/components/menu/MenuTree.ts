@@ -84,6 +84,12 @@ export const menuTree: TreeItem[] = [
         url: '/modernist-studies/lustig-hewitt',
         hasChildren: false,
         children: []
+      },
+      {
+        title: 'Norman Ives, Record Cover, Yves Nat',
+        url: '/modernist-studies/ives-beethoven',
+        hasChildren: false,
+        children: []
       }
     ]
   }
