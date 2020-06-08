@@ -82,6 +82,13 @@ export const menuTree: TreeItem[] = [
         children: []
       },
       {
+        title:
+          'Alvin Lustig: Vivaldi, Concerto for Five Instruments (Record Cover, 1953)',
+        url: '/modernist-studies/lustig-vivaldi',
+        hasChildren: false,
+        children: []
+      },
+      {
         title: 'Norman Ives: Beethoven, Yves Nat (Record Cover, 1954)',
         url: '/modernist-studies/ives-beethoven',
         hasChildren: false,

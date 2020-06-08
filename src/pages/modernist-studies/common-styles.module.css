@@ -9,7 +9,7 @@
   margin: 0;
 }
 .captionImageWrap {
-  width: 50%;
+  width: 100%;
 }
 
 .italic {
@@ -19,6 +19,9 @@
 @media screen and (min-width: 770px) {
   .wrapper {
     margin: 50px 20vw;
+  }
+  .captionImageWrap {
+    width: 50%;
   }
 }
 

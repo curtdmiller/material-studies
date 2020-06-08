@@ -1,0 +1,51 @@
+$beige-gray: #e6e1d3;
+$yellow-ochre: #de9c1d;
+$red-orange: #ff5a26;
+$grape: #cc729a;
+
+.wrapper {
+  width: 100%;
+  padding: 0 10%;
+  margin: 0;
+  svg {
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: solid #aaa 1px;
+    background-color: $beige-gray;
+    .gold {
+      fill: $yellow-ochre;
+    }
+    .gray {
+      fill: $beige-gray;
+    }
+    .red {
+      fill: $red-orange;
+    }
+    .purple {
+      fill: $grape;
+    }
+    text {
+      stroke: none;
+      fill: $grape;
+      font-size: 2.7px;
+      font-family: 'Poppins', sans-serif;
+      font-family: 'Raleway', sans-serif;
+    }
+  }
+}
+.description {
+  margin: 50px 0;
+  font-size: 0.6em;
+}
+
+@media screen and (min-width: 680px) {
+  .wrapper {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .wrapper {
+    padding: 0 25%;
+  }
+}
