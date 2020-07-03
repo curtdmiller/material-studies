@@ -22,7 +22,7 @@ export const colors = {
 export const fonts = {
   sansSerif:
     '"Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
-  serif: '"Crimson Text", "Times New Roman", Times, serif',
+  serif: 'Merriweather, Georgia, serif',
   monospace:
     'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 }

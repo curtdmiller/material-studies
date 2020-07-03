@@ -14358,6 +14358,11 @@ typeface-libre-franklin@^0.0.75:
   resolved "https://registry.yarnpkg.com/typeface-libre-franklin/-/typeface-libre-franklin-0.0.75.tgz#7b8a1cfaf3da9324b4f7cf5c58220fa440a7a998"
   integrity sha512-bpX2YsybHkft0ewKAukZWgjOr3r7vQ9NG0jwGj9HGv1A3/wcuoafkv7pK5cGouAjLNqVuKIkdelgefdDhGg/fw==
 
+typeface-merriweather@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-merriweather/-/typeface-merriweather-0.0.72.tgz#2b990f5293252052d51d170c82d3892319ff0555"
+  integrity sha512-gO0+fcZ1fTyKUsYY1ltYOOTI6FmBGeEdyIfeQg9NL8aInndk0feiJJVJsKHm/DiyYrnQEezraAQhz/KQoqMGtw==
+
 typeface-rosario@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/typeface-rosario/-/typeface-rosario-1.1.4.tgz#e901bafd401f8d1634e38ba7f9f03277061f73ed"

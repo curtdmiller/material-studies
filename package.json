@@ -60,6 +60,7 @@
     "typeface-crimson-text": "^0.0.72",
     "typeface-fira-sans": "^0.0.75",
     "typeface-libre-franklin": "^0.0.75",
+    "typeface-merriweather": "^0.0.72",
     "typeface-rosario": "^1.1.4",
     "typescript": "^3.5.2"
   },
