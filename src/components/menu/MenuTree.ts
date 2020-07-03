@@ -50,6 +50,12 @@ export const menuTree: TreeItem[] = [
     hasChildren: true,
     children: [
       {
+        title: 'George Nelson Studio: Hermann Miller Trifold Brochures (1960)',
+        url: '/modernist-studies/hermann-miller',
+        hasChildren: false,
+        children: []
+      },
+      {
         title: 'Ingo Offermans: Josef Albers, Interaction (Book, 2018)',
         url: '/modernist-studies/albers-interaction',
         hasChildren: false,
