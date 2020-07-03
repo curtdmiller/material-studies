@@ -7,7 +7,7 @@ export const colors = {
   warning: '#ec1818',
   ui: {
     bright: '#cfe2da',
-    light: '#eff5f3'
+    light: 'f7faf9'
   },
   code: '#fcf6f0',
   gray: {

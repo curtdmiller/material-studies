@@ -12,15 +12,17 @@ const Menu = styled.ul`
   padding: 0;
 `
 const MenuItem = styled.li`
+  margin: 0.3em 0;
   ul {
-    padding-left: 2rem;
+    padding-left: 1.25rem;
+    padding-bottom: 1.25rem;
     margin: 0;
   }
 `
 const MenuLink = styled(Link)`
   color: ${colors.gray.dark};
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -33,12 +35,12 @@ const renderMenu = ({ tree, level, icons }: RenderOptions) => {
       return (
         <MenuItem>
           {icons && level > 0 && (
-            <SVGIcon fontSize="1.5em">
+            <SVGIcon fontSize="1.2rem">
               <IoIosReturnRight />
             </SVGIcon>
           )}
           <MenuLink
-            style={{ fontSize: level > 0 ? '1.5rem' : '2rem' }}
+            style={{ fontSize: level > 0 ? '1.2rem' : '2rem' }}
             to={branch.url}
           >
             {branch.title}
@@ -56,12 +58,12 @@ const renderMenu = ({ tree, level, icons }: RenderOptions) => {
       return (
         <MenuItem>
           {icons && level > 0 && (
-            <SVGIcon fontSize="1.5em">
+            <SVGIcon fontSize="1.2rem">
               <IoIosReturnRight />
             </SVGIcon>
           )}
           <MenuLink
-            style={{ fontSize: level > 0 ? '1.5rem' : '2rem' }}
+            style={{ fontSize: level > 0 ? '1.2rem' : '2rem' }}
             to={branch.url}
           >
             {branch.title}

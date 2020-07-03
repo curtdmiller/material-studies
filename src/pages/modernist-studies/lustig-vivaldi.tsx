@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -14,6 +15,22 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    }
+  }
+`
+
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
     }
   }
 `
@@ -32,6 +49,21 @@ const LustigVivaldi = () => {
           href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap"
         />
       </Helmet>
+      <HeaderWrapper>
+        <Header>
+          <h1>Vivaldi, Concertos and Sonatas</h1>
+          <p>Cover design: Alvin Lustig, 1953</p>
+          <p>
+            <a
+              href="https://www.discogs.com/Vivaldi-Jean-Pierre-Rampal-Pierre-Pierlot-Robert-Gendre-Paul-Hongne-Robert-Veyron-Lacroix-Concerto-f/release/10864849"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={styles.wrapper}>
         <svg width="100%" height="auto" viewBox="0 -100 200 200">
           <defs>
@@ -124,16 +156,6 @@ const LustigVivaldi = () => {
           </text>
         </svg>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://www.discogs.com/Vivaldi-Jean-Pierre-Rampal-Pierre-Pierlot-Robert-Gendre-Paul-Hongne-Robert-Veyron-Lacroix-Concerto-f/release/10864849"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>{' '}
-            - Alvin Lustig
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

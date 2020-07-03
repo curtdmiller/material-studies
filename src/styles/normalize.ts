@@ -22,8 +22,8 @@ export default `
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: ${fonts.serif};
-    color: ${colors.black};
-    background-color: ${colors.white};
+    color: ${colors.gray.copy};
+    background-color: ${colors.ui.light};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }

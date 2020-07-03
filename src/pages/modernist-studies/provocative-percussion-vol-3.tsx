@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -20,6 +21,21 @@ export const query = graphql`
   }
 `
 
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
+    }
+  }
+`
 const ProvocativePercussionVol3 = () => {
   const data = useStaticQuery(query)
   return (
@@ -27,6 +43,21 @@ const ProvocativePercussionVol3 = () => {
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/moe5wud.css" />
       </Helmet>
+      <HeaderWrapper>
+        <Header>
+          <h1>Provocative Percussion Vol. 3</h1>
+          <p>Cover design: Josef Albers, 1961</p>
+          <p>
+            <a
+              href="https://collection.cooperhewitt.org/objects/18734869/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={styles.percussionVol3}>
           <div className={styles.header}>
@@ -632,16 +663,6 @@ const ProvocativePercussionVol3 = () => {
           </div>
         </div>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://collection.cooperhewitt.org/objects/18734869/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>{' '}
-            - Josef Albers
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

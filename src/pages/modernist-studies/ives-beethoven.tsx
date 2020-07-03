@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -18,6 +19,22 @@ export const query = graphql`
   }
 `
 
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
+    }
+  }
+`
+
 const IvesBeethoven = () => {
   const data = useStaticQuery(query)
   return (
@@ -25,6 +42,21 @@ const IvesBeethoven = () => {
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/moe5wud.css" />
       </Helmet>
+      <HeaderWrapper>
+        <Header>
+          <h1>Beethoven Piano Sonatas</h1>
+          <p>Cover Design: Norman Ives, 1954</p>
+          <p>
+            <a
+              href="https://www.discogs.com/Beethoven-Yves-Nat-Piano-Sonatas-Opus-109-Sonata-No-30-In-E-Major-Opus-111-Sonata-No-31-In-A-Flat-Ma/release/10689817"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={styles.ivesBeethoven}>
           <div className={styles.inner}>
@@ -52,16 +84,6 @@ const IvesBeethoven = () => {
           </div>
         </div>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://www.discogs.com/Beethoven-Yves-Nat-Piano-Sonatas-Opus-109-Sonata-No-30-In-E-Major-Opus-111-Sonata-No-31-In-A-Flat-Ma/release/10689817"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>{' '}
-            - Norman Ives
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

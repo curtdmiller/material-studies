@@ -7,7 +7,7 @@ export const menuTree: TreeItem[] = [
     hasChildren: true,
     children: [
       {
-        title: 'Open Cubes',
+        title: 'Variations of Incomplete Open Cubes',
         url: '/lewitt-studies/open-cubes',
         hasChildren: false,
         children: []
@@ -50,52 +50,49 @@ export const menuTree: TreeItem[] = [
     hasChildren: true,
     children: [
       {
-        title: 'George Nelson Studio: Hermann Miller Trifold Brochures (1960)',
+        title: 'Hermann Miller Trifold Brochures (1960)',
         url: '/modernist-studies/hermann-miller',
         hasChildren: false,
         children: []
       },
       {
-        title: 'Ingo Offermans: Josef Albers, Interaction (Book, 2018)',
+        title: 'Interaction (Book, 2018)',
         url: '/modernist-studies/albers-interaction',
         hasChildren: false,
         children: []
       },
       {
-        title: 'Josef Albers: Provocative Percussion (Record Cover, 1959)',
+        title: 'Provocative Percussion (Record Cover, 1959)',
         url: '/modernist-studies/provocative-percussion',
         hasChildren: false,
         children: []
       },
       {
-        title:
-          'Josef Albers: Provocative Percussion Vol. III (Record Cover, 1961)',
+        title: 'Provocative Percussion Vol. III (Record Cover, 1961)',
         url: '/modernist-studies/provocative-percussion-vol-3',
         hasChildren: false,
         children: []
       },
       {
-        title: 'Josef Albers: Pillars (Screenprint, 1970)',
+        title: 'Pillars (Screenprint, 1970)',
         url: '/modernist-studies/albers-pillars',
         hasChildren: false,
         children: []
       },
       {
-        title:
-          'Alvin Lustig: The Suites for Orchestra by J.S. Bach (Record Cover, 1952)',
+        title: 'The Suites for Orchestra by J.S. Bach (Record Cover, 1952)',
         url: '/modernist-studies/lustig-hewitt',
         hasChildren: false,
         children: []
       },
       {
-        title:
-          'Alvin Lustig: Vivaldi, Concerto for Five Instruments (Record Cover, 1953)',
+        title: 'Vivaldi, Concertos and Sonatas (Record Cover, 1953)',
         url: '/modernist-studies/lustig-vivaldi',
         hasChildren: false,
         children: []
       },
       {
-        title: 'Norman Ives: Beethoven, Yves Nat (Record Cover, 1954)',
+        title: 'Beethoven Piano Sonatas (Record Cover, 1954)',
         url: '/modernist-studies/ives-beethoven',
         hasChildren: false,
         children: []

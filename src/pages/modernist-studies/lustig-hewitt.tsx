@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -18,6 +19,22 @@ export const query = graphql`
   }
 `
 
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
+    }
+  }
+`
+
 const LustigHewitt = () => {
   const data = useStaticQuery(query)
   return (
@@ -25,6 +42,21 @@ const LustigHewitt = () => {
       <Helmet>
         <link rel="stylesheet" href="https://use.typekit.net/moe5wud.css" />
       </Helmet>
+      <HeaderWrapper>
+        <Header>
+          <h1>The Suites for Orchestra by J.S. Bach</h1>
+          <p>Cover design: Alvin Lustig, 1952</p>
+          <p>
+            <a
+              href="https://collection.cooperhewitt.org/objects/18694907/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={styles.lustigBach}>
           <div className={styles.inner}>
@@ -66,16 +98,6 @@ const LustigHewitt = () => {
           </div>
         </div>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://collection.cooperhewitt.org/objects/18694907/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>{' '}
-            - Alvin Lustig
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

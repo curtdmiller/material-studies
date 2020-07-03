@@ -44,8 +44,8 @@ const Textiles = () => (
           y="0"
           width="200%"
           height="13"
-          flood-color="#f8ec4e"
-          flood-opacity=".8"
+          floodColor="#f8ec4e"
+          floodOpacity=".8"
         />
         <feBlend in="SourceGraphic" in2="floodFill" mode="multiply" />
       </filter>
@@ -79,6 +79,7 @@ const Textiles = () => (
         y="140"
         width="300"
         height="13"
+        filter="url(#mixer)"
       />
       <use href="#yellow-stripe" y="20" transform="rotate(-2)" />
       <use href="#yellow-stripe" y="36" />

@@ -4,6 +4,7 @@ import commonStyles from './common-styles.module.css'
 import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -17,10 +18,41 @@ export const query = graphql`
   }
 `
 
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
+    }
+  }
+`
+
 const AlbersInteraction = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
+      <HeaderWrapper>
+        <Header>
+          <h1>Josef Albers, Interaction</h1>
+          <p>Cover design: Ingo Offermans, 2018</p>
+          <p>
+            <a
+              href="https://davidzwirnerbooks.com/product/josef-albers-interaction"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={`${styles.albersInteraction} ${styles.aot}`}>
           <div className={styles.inner}>
@@ -47,15 +79,6 @@ const AlbersInteraction = () => {
         <div
           className={`${commonStyles.caption} ${styles.albersInteractionNotes}`}
         >
-          <p>
-            <a
-              href="https://davidzwirnerbooks.com/product/josef-albers-interaction"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

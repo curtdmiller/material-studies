@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -16,6 +17,22 @@ export const query = graphql`
           ...GatsbyImageSharpFluid
         }
       }
+    }
+  }
+`
+
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
     }
   }
 `
@@ -34,6 +51,20 @@ const AlbersInteraction = () => {
           href="https://fonts.googleapis.com/css?family=Sintony:700&display=swap"
         />
       </Helmet>
+      <HeaderWrapper>
+        <Header>
+          <h1>Interaction of Color, 50th Anniv. Ed.</h1>
+          <p>
+            <a
+              href="https://www.amazon.com/Interaction-Color-Anniversary-Josef-Albers/dp/0300179359/ref=sr_1_2?keywords=josef+albers+interaction&qid=1570027756&sr=8-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={styles.albersColor}>
           <div className={styles.header}>
@@ -57,15 +88,6 @@ const AlbersInteraction = () => {
           </div>
         </div>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://www.amazon.com/Interaction-Color-Anniversary-Josef-Albers/dp/0300179359/ref=sr_1_2?keywords=josef+albers+interaction&qid=1570027756&sr=8-2"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>

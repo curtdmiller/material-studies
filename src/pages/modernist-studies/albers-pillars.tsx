@@ -5,6 +5,7 @@ import IndexLayout from '../../layouts'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import clsx from 'clsx'
+import styled from '@emotion/styled'
 
 export const query = graphql`
   query {
@@ -18,10 +19,41 @@ export const query = graphql`
   }
 `
 
+const HeaderWrapper = styled.div`
+  padding: 1.5em;
+`
+
+const Header = styled.div`
+  margin: 0 auto;
+  width: auto;
+  max-width: 60em;
+  p {
+    margin: 0;
+    a {
+      font-style: italic;
+    }
+  }
+`
+
 const ProvocativePercussion = () => {
   const data = useStaticQuery(query)
   return (
     <IndexLayout>
+      <HeaderWrapper>
+        <Header>
+          <h1>Pillars</h1>
+          <p>Josef Albers, Screenprint, 1970</p>
+          <p>
+            <a
+              href="https://www.artic.edu/artworks/37068/mma-pillars-1928"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source
+            </a>
+          </p>
+        </Header>
+      </HeaderWrapper>
       <div className={commonStyles.wrapper}>
         <div className={styles.albersPillars}>
           <div className={styles.inner}>
@@ -348,16 +380,6 @@ const ProvocativePercussion = () => {
           </div>
         </div>
         <div className={commonStyles.caption}>
-          <p>
-            <a
-              href="https://www.artic.edu/artworks/37068/mma-pillars-1928"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Original
-            </a>{' '}
-            - Josef Albers
-          </p>
           <div className={commonStyles.captionImageWrap}>
             <Img fluid={data.fileName.childImageSharp.fluid} />
           </div>
