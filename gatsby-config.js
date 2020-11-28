@@ -2,9 +2,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Curt Dallace Miller',
-    description: 'a tableau',
-    keywords: 'music, art, sound art, transcription, web art, code',
+    title: 'Curt Miller, material studies',
+    description:
+      'Web transcriptions: studies of physical materials for the modern browser.',
+    keywords: 'transcription, print materials, web art',
     siteUrl: 'https://www.curtdmiller.com',
     author: {
       name: 'Curt Miller',
