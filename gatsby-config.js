@@ -13,6 +13,7 @@ module.exports = {
       email: 'curtdmiller@gmail.com'
     }
   },
+  pathPrefix: '/modernist-studies',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
